@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="background.png"
+             xmlns:local ="clr-namespace:AppMTC"
+             x:Class="AppMTC.account.Sign_in"
+             x:Name="SignIn">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Entr" TargetType="Entry">
+                <Setter Property="PlaceholderColor" Value="#55A1D8" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="MTCLogo.png" VerticalOptions="Center" Margin="70,80,70,60"></Image>
+            <local:MyFrame BackgroundColor="Transparent" OutlineColor="White" HasShadow="false" 
+                    Padding="20,5,5,5">
+            </local:MyFrame>
+            <Image Source="back.png" HorizontalOptions="End"  ></Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
